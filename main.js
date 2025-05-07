@@ -1,5 +1,11 @@
 document.querySelector("#date").textContent = new Date().getFullYear();
 
+document.querySelector(".main").addEventListener("click", () => {
+  document.querySelector(".landing").scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 document.querySelector(".home").addEventListener("click", () => {
   document.querySelector(".landing").scrollIntoView({
     behavior: "smooth",
